@@ -43,7 +43,7 @@ jobs:
 
     - name: Install package
       run: |
-        snap install yq
+        sudo snap install yq
 
     # Build
     - name: Build Docker image
