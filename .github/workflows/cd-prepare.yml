@@ -55,7 +55,7 @@ jobs:
 
     - name: persist version
       run: |
-        yq -i ".appVersion = ${GITHUB_SHA}" ./chart/Chart.yaml
+        yq -i ".appVersion = \"${GITHUB_SHA}\"" ./chart/Chart.yaml
         git config --global user.email "wubw@pku.edu.cn"
         git config --global user.name "github action"
         git add ./chart/Chart.yaml
