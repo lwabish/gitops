@@ -20,6 +20,7 @@ on:
     branches: [ "main" ]
     paths-ignore:
       - "chart/Chart.yaml"
+      - "README.md"
 
 env:
   TKE_IMAGE_URL: ccr.ccs.tencentyun.com/lwabish/gitops
